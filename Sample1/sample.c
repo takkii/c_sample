@@ -6,7 +6,7 @@
 
 /* 
  * File:   sample.c
- * Author: sudok
+ * Author: Takayuki Kamiyama
  *
  * Created on 2019/07/26, 21:58
  */

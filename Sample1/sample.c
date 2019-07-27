@@ -17,10 +17,17 @@
 /*
  * 
  */
-int main(int argc, char** argv) {
-    
-    // Hello World.
-    printf("こんにちは、世界!");
-    return (EXIT_SUCCESS);
+
+char *
+func(void)
+{
+    static char one_string[30] = "こんにちは、世界!\n";
+    printf("*from func: %s", one_string);
+    printf("\n");
+    return (one_string);
 }
 
+int main(int argc, char** argv) {
+    printf("*from func: %s", func());
+    return (0);
+}
